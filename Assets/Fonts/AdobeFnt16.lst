@@ -1,0 +1,71 @@
+%!Adobe-FontList 1.16
+%Locale:0x2c0a
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ArialNarrow
+FamilyName:Arial Narrow
+StyleName:Regular
+FullName:Arial Narrow
+MenuName:Arial Narrow
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\dropbox\Fiero\BOGZA\TheWilshireUI-Draft Folder\Document fonts\Arial Narrow.ttf
+DataFormat:sfntData
+FileLength:179492
+FileModTime:1392247278
+WeightClass:400
+WidthClass:3
+AngleClass:0
+NameArray:0,Mac,4,Arial Narrow
+NameArray:0,Win,1,Arial Narrow
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Miso-Light
+FamilyName:Miso
+StyleName:Light
+FullName:Miso Light
+MenuName:Miso
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\dropbox\Fiero\BOGZA\TheWilshireUI-Draft Folder\Document fonts\miso-light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:24820
+FileModTime:1231548180
+WeightClass:300
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,4,Miso Light
+NameArray:0,Win,1,Miso
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Verlag-Light
+FamilyName:Verlag
+StyleName:Light
+FullName:Verlag Light
+MenuName:Verlag Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\dropbox\Fiero\BOGZA\TheWilshireUI-Draft Folder\Document fonts\Verlag-Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:169996
+FileModTime:1422139486
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Verlag Light
+NameArray:0,Win,1,Verlag Light
+NameArray:0,Win,16,Verlag
+%EndFont
+
