@@ -9,11 +9,8 @@ public class CameraController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
-	}
 
-	void LateUpdate() {
+	void Update() {
 		float pinchAmount = 0;
 		Quaternion desiredRotation = transform.rotation;
 		
@@ -48,6 +45,13 @@ public class CameraController : MonoBehaviour {
 		                                      transform.localPosition.z);
 
 
+		Vector3 rot = transform.localRotation.eulerAngles;
+		if (rot.x < 45)
+			rot.x = 45;
+		if (rot.x > 75)
+			rot.x = 75;
+		rot.z = 0;
+		transform.localRotation = Quaternion.Euler(rot);
 	}
 		
 
