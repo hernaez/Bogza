@@ -5,7 +5,7 @@ public class DetectTouchMovement : MonoBehaviour {
 	const float pinchTurnRatio = Mathf.PI / 2 ;
 	const float minTurnAngle = 0;
 	
-	const float pinchRatio = 0.25f;
+	const float pinchRatio = 0.05f;
 	const float minPinchDistance = 0;
 	
 	const float panRatio = 1;
@@ -14,7 +14,9 @@ public class DetectTouchMovement : MonoBehaviour {
 	/// <summary>
 	///   The delta of the angle between two touch points
 	/// </summary>
-	static public float turnAngleDelta;
+	static public float turnAngleDelta = 0;
+	static public float slantAngleDelta = 0;
+
 	/// <summary>
 	///   The angle between two touch points
 	/// </summary>
@@ -34,7 +36,7 @@ public class DetectTouchMovement : MonoBehaviour {
 	/// </summary>
 	static public void Calculate () {
 		pinchDistance = pinchDistanceDelta = 0;
-		turnAngle = turnAngleDelta = 0;
+		//turnAngle = turnAngleDelta = 0;
 		
 		// if two fingers are touching the screen at the same time ...
 		if (Input.touchCount == 2) {
@@ -86,5 +88,94 @@ public class DetectTouchMovement : MonoBehaviour {
 		
 		return result;
 	}
+
+	public float minMovement = 10.0f;
+	public bool sendUpMessage = true;
+	public bool sendDownMessage = true;
+	public bool sendLeftMessage = true;
+	public bool sendRightMessage = true;
+	public GameObject MessageTarget = null;
+	
+	private Vector2 StartPos;
+	private int SwipeID = -1;
+
+
+
+	void Update ()
+	{
+		if (MessageTarget == null)
+			MessageTarget = gameObject;
+
+		if (Input.touchCount >= 1)
+		{
+			Touch T = Input.touches[0];
+			var P = T.position;
+			if (T.phase == TouchPhase.Began && SwipeID == -1)
+			{
+				SwipeID = T.fingerId;
+				StartPos = P;
+			}
+			else if (T.fingerId == SwipeID)
+			{
+				var delta = P - StartPos;
+				if (T.phase == TouchPhase.Moved && delta.magnitude > minMovement)
+				{
+					SwipeID = -1;
+					if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y))
+					{
+						if (sendRightMessage && delta.x > 0)
+							MessageTarget.SendMessage("OnSwipeRight", SendMessageOptions.DontRequireReceiver);
+						else if (sendLeftMessage && delta.x < 0)
+							MessageTarget.SendMessage("OnSwipeLeft", SendMessageOptions.DontRequireReceiver);
+					}
+					else
+					{
+						if (sendUpMessage && delta.y > 0)
+							MessageTarget.SendMessage("OnSwipeUp", SendMessageOptions.DontRequireReceiver);
+						else if (sendDownMessage && delta.y < 0)
+							MessageTarget.SendMessage("OnSwipeDown", SendMessageOptions.DontRequireReceiver);
+					}
+				}
+				if (T.phase == TouchPhase.Canceled || T.phase == TouchPhase.Ended)
+				{
+					SwipeID = -1;
+					MessageTarget.SendMessage("OnTap", SendMessageOptions.DontRequireReceiver);
+				}
+			}
+		}
+		else
+		{
+			turnAngleDelta = 0;
+			slantAngleDelta = 0;
+		}
+
+	}
+	void OnSwipeRight()
+	{
+		Debug.Log("SWIPE RIGHT");
+		turnAngleDelta = -3f;
+	}
+	void OnSwipeLeft()
+	{
+		Debug.Log("SWIPE RIGHT");
+		turnAngleDelta = 3f;
+	}
+
+	void OnSwipeUp()
+	{
+		Debug.Log("SWIPE Up");
+		slantAngleDelta = -3f;
+	}
+	void OnSwipeDown()
+	{
+		Debug.Log("SWIPE Down");
+		slantAngleDelta = 3f;
+	}
+
+
 }
+
+
+
+
 

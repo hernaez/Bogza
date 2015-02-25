@@ -454,6 +454,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486587dfc70ea4bd3ab050ec02f0246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minMovement: 10
+  sendUpMessage: 1
+  sendDownMessage: 1
+  sendLeftMessage: 1
+  sendRightMessage: 1
+  MessageTarget: {fileID: 0}
 --- !u!114 &656133200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,6 +497,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486587dfc70ea4bd3ab050ec02f0246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minMovement: 10
+  sendUpMessage: 1
+  sendDownMessage: 1
+  sendLeftMessage: 1
+  sendRightMessage: 1
+  MessageTarget: {fileID: 0}
 --- !u!1 &1111030988
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,35 +583,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 434514, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}
       propertyPath: m_LocalRotation.x
-      value: .600071669
+      value: .600071728
       objectReference: {fileID: 0}
     - target: {fileID: 434514, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .374046177
+      value: .374046206
       objectReference: {fileID: 0}
     - target: {fileID: 434514, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.374040365
+      value: -.374040395
       objectReference: {fileID: 0}
     - target: {fileID: 434514, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .600081027
+      value: .600081086
       objectReference: {fileID: 0}
     - target: {fileID: 456902, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}
       propertyPath: m_LocalRotation.x
-      value: .600071669
+      value: .600071728
       objectReference: {fileID: 0}
     - target: {fileID: 456902, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .374046177
+      value: .374046206
       objectReference: {fileID: 0}
     - target: {fileID: 456902, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.374040365
+      value: -.374040395
       objectReference: {fileID: 0}
     - target: {fileID: 456902, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .600081027
+      value: .600081086
       objectReference: {fileID: 0}
     - target: {fileID: 2008380, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}
       propertyPath: m_CullingMask.m_Bits
@@ -680,6 +692,14 @@ Prefab:
     - target: {fileID: 166044, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}
       propertyPath: m_Name
       value: FloorPlans
+      objectReference: {fileID: 0}
+    - target: {fileID: 453714, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453714, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9551466, guid: a7d639eb38e2bdc4382a4544c5d2b576, type: 2}

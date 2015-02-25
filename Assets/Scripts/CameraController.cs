@@ -31,9 +31,14 @@ public class CameraController : MonoBehaviour {
 			rotationDeg.y = -DetectTouchMovement.turnAngleDelta;
 			desiredRotation *= Quaternion.Euler(rotationDeg);
 		}
-		
-		
-		// not so sure those will work:
+
+		if (Mathf.Abs(DetectTouchMovement.slantAngleDelta) > 0) { // slant
+			Vector3 rotationDeg = Vector3.zero;
+			rotationDeg.x = -DetectTouchMovement.slantAngleDelta;
+			desiredRotation *= Quaternion.Euler(rotationDeg);
+		}
+
+
 		transform.rotation = desiredRotation;
 		transform.position += Vector3.forward * pinchAmount;                   
 
@@ -42,5 +47,11 @@ public class CameraController : MonoBehaviour {
 			                                  Mathf.Clamp(transform.localPosition.y ,-10f,16f),
 		                                      transform.localPosition.z);
 
+
 	}
+		
+
+
+
+
 }
