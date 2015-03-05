@@ -5,7 +5,7 @@ public class DetectTouchMovement : MonoBehaviour {
 	const float pinchTurnRatio = Mathf.PI / 2 ;
 	const float minTurnAngle = 0;
 	
-	const float pinchRatio = 0.05f;
+	const float pinchRatio = 0.01f;
 	const float minPinchDistance = 0;
 	
 	const float panRatio = 1;
@@ -153,23 +153,23 @@ public class DetectTouchMovement : MonoBehaviour {
 	void OnSwipeRight()
 	{
 		Debug.Log("SWIPE RIGHT");
-		turnAngleDelta = -3f;
+		turnAngleDelta = 3f;
 	}
 	void OnSwipeLeft()
 	{
-		Debug.Log("SWIPE RIGHT");
-		turnAngleDelta = 3f;
+		Debug.Log("SWIPE Left");
+		turnAngleDelta = -3f;
 	}
 
 	void OnSwipeUp()
 	{
 		Debug.Log("SWIPE Up");
-		slantAngleDelta = -3f;
+		slantAngleDelta = 3f;
 	}
 	void OnSwipeDown()
 	{
 		Debug.Log("SWIPE Down");
-		slantAngleDelta = 3f;
+		slantAngleDelta = -3f;
 	}
 
 
