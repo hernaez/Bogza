@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CameraController : MonoBehaviour {
+public class PlaneController : MonoBehaviour {
 
+	[SerializeField] GameObject slantPlane;
 	// Use this for initialization
 	void Start () {
 	
@@ -13,6 +14,7 @@ public class CameraController : MonoBehaviour {
 	void Update() {
 		float pinchAmount = 0;
 		Quaternion desiredRotation = transform.rotation;
+		Quaternion desiredSlantRotation = slantPlane.transform.rotation;
 		
 		DetectTouchMovement.Calculate();
 		
@@ -30,10 +32,11 @@ public class CameraController : MonoBehaviour {
 		}
 
 		if (Mathf.Abs(DetectTouchMovement.slantAngleDelta) > 0) { // slant
-			Vector3 rotationDeg = Vector3.zero;
-			rotationDeg.x = -DetectTouchMovement.slantAngleDelta;
-			desiredRotation *= Quaternion.Euler(rotationDeg);
+			Vector3 rotationSlant = Vector3.zero;
+			rotationSlant.x = -DetectTouchMovement.slantAngleDelta;
+			desiredSlantRotation *= Quaternion.Euler(rotationSlant);
 		}
+
 
 
 		transform.rotation = desiredRotation;
@@ -45,13 +48,15 @@ public class CameraController : MonoBehaviour {
 		                                      transform.localPosition.z);
 
 
-		Vector3 rot = transform.localRotation.eulerAngles;
+		slantPlane.transform.rotation = desiredSlantRotation;
+
+		Vector3 rot = slantPlane.transform.localRotation.eulerAngles;
 		if (rot.x < 45)
 			rot.x = 45;
 		if (rot.x > 75)
 			rot.x = 75;
 		rot.z = 0;
-		transform.localRotation = Quaternion.Euler(rot);
+		slantPlane.transform.localRotation = Quaternion.Euler(rot);
 	}
 		
 
