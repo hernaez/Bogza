@@ -11,7 +11,7 @@ public class DragPanel : MonoBehaviour, IPointerDownHandler, IDragHandler {
 	private RectTransform parentRectTransform;
 	
 	void Awake () {
-		panelRectTransform = transform.parent as RectTransform;
+		panelRectTransform = transform as RectTransform;
 		parentRectTransform = panelRectTransform.parent as RectTransform;
 	}
 	

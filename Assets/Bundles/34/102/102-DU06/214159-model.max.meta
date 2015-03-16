@@ -1,0 +1,226 @@
+fileFormatVersion: 2
+guid: cffd35b0a85a838428df08ef66e4a17d
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Layer:0 2
+    100002: Layer:0
+    100004: Block:092000
+    100006: Layer:0 1
+    100008: Block:214109
+    100010: //RootNode
+    100012: Block:1F220-00-01_BODY-CASEn
+    100014: Block:RC-FILTER-NEW
+    100016: Block:1F218-A0-01_LID-BUFFER
+    100018: Block:1F218-A0-01_LID-BUFFER 1
+    100020: Block:1F218-A0-01_LID-BUFFER 2
+    100022: Block:1F218-A0-01_LID-BUFFER 3
+    100024: Block:1F214-B0-01_HINGE-COVER
+    100026: Block:1F214-A0-01_HINGE-COVER
+    100028: Block:103227_BUTTON-MEMBRANE
+    100030: Block:1F216-B0-01_INFRARED-FILTER
+    100032: Block:1F218-B0-01_SEAT-BUFFER 3
+    100034: Block:1F218-B0-01_SEAT-BUFFER 2
+    100036: Block:1F218-B0-01_SEAT-BUFFER 1
+    100038: Block:1F218-B0-01_SEAT-BUFFER
+    100040: Block:1F221-A0-01_TOP-CASE
+    100042: Block:F22030-1001_SEAT-MODULE_ASM
+    100044: Block:1F219-00-01_SEAT-LID
+    100046: Block:1F215-00-01_DECORATIVE-COVER
+    100048: Block:F2030-1001_CASE-ASSY_ASM
+    100050: Block:SPK Taster
+    100052: Layer:0 4
+    100054: Block:SR
+    100056: Layer:0 3
+    100058: Block:103226
+    100060: Layer:0 9
+    100062: Layer:0 19
+    100064: Layer:0 20
+    100066: Layer:0 17
+    100068: Layer:0 18
+    100070: Layer:0 21
+    100072: Layer:0 14
+    100074: Layer:0 8
+    100076: Block:610000
+    100078: Layer:0 15
+    100080: Layer:0 16
+    100082: Layer:0 12
+    100084: Layer:0 11
+    100086: Layer:0 13
+    100088: Layer:0 10
+    100090: Layer:0 7
+    100092: Layer:0 6
+    100094: Layer:0 5
+    400000: Layer:0 2
+    400002: Layer:0
+    400004: Block:092000
+    400006: Layer:0 1
+    400008: Block:214109
+    400010: //RootNode
+    400012: Block:1F220-00-01_BODY-CASEn
+    400014: Block:RC-FILTER-NEW
+    400016: Block:1F218-A0-01_LID-BUFFER
+    400018: Block:1F218-A0-01_LID-BUFFER 1
+    400020: Block:1F218-A0-01_LID-BUFFER 2
+    400022: Block:1F218-A0-01_LID-BUFFER 3
+    400024: Block:1F214-B0-01_HINGE-COVER
+    400026: Block:1F214-A0-01_HINGE-COVER
+    400028: Block:103227_BUTTON-MEMBRANE
+    400030: Block:1F216-B0-01_INFRARED-FILTER
+    400032: Block:1F218-B0-01_SEAT-BUFFER 3
+    400034: Block:1F218-B0-01_SEAT-BUFFER 2
+    400036: Block:1F218-B0-01_SEAT-BUFFER 1
+    400038: Block:1F218-B0-01_SEAT-BUFFER
+    400040: Block:1F221-A0-01_TOP-CASE
+    400042: Block:F22030-1001_SEAT-MODULE_ASM
+    400044: Block:1F219-00-01_SEAT-LID
+    400046: Block:1F215-00-01_DECORATIVE-COVER
+    400048: Block:F2030-1001_CASE-ASSY_ASM
+    400050: Block:SPK Taster
+    400052: Layer:0 4
+    400054: Block:SR
+    400056: Layer:0 3
+    400058: Block:103226
+    400060: Layer:0 9
+    400062: Layer:0 19
+    400064: Layer:0 20
+    400066: Layer:0 17
+    400068: Layer:0 18
+    400070: Layer:0 21
+    400072: Layer:0 14
+    400074: Layer:0 8
+    400076: Block:610000
+    400078: Layer:0 15
+    400080: Layer:0 16
+    400082: Layer:0 12
+    400084: Layer:0 11
+    400086: Layer:0 13
+    400088: Layer:0 10
+    400090: Layer:0 7
+    400092: Layer:0 6
+    400094: Layer:0 5
+    2300000: Layer:0 2
+    2300002: Layer:0
+    2300004: Layer:0 1
+    2300006: Layer:0 4
+    2300008: Layer:0 3
+    2300010: Layer:0 9
+    2300012: Layer:0 19
+    2300014: Layer:0 20
+    2300016: Layer:0 17
+    2300018: Layer:0 18
+    2300020: Layer:0 21
+    2300022: Layer:0 14
+    2300024: Layer:0 8
+    2300026: Layer:0 15
+    2300028: Layer:0 16
+    2300030: Layer:0 12
+    2300032: Layer:0 11
+    2300034: Layer:0 13
+    2300036: Layer:0 10
+    2300038: Layer:0 7
+    2300040: Layer:0 6
+    2300042: Layer:0 5
+    3300000: Layer:0 2
+    3300002: Layer:0
+    3300004: Layer:0 1
+    3300006: Layer:0 4
+    3300008: Layer:0 3
+    3300010: Layer:0 9
+    3300012: Layer:0 19
+    3300014: Layer:0 20
+    3300016: Layer:0 17
+    3300018: Layer:0 18
+    3300020: Layer:0 21
+    3300022: Layer:0 14
+    3300024: Layer:0 8
+    3300026: Layer:0 15
+    3300028: Layer:0 16
+    3300030: Layer:0 12
+    3300032: Layer:0 11
+    3300034: Layer:0 13
+    3300036: Layer:0 10
+    3300038: Layer:0 7
+    3300040: Layer:0 6
+    3300042: Layer:0 5
+    4300000: Layer:0
+    4300002: Layer:0
+    4300004: Layer:0
+    4300006: Layer:0
+    4300008: Layer:0
+    4300010: Layer:0
+    4300012: Layer:0
+    4300014: Layer:0
+    4300016: Layer:0
+    4300018: Layer:0
+    4300020: Layer:0
+    4300022: Layer:0
+    4300024: Layer:0
+    4300026: Layer:0
+    4300028: Layer:0
+    4300030: Layer:0
+    4300032: Layer:0
+    4300034: Layer:0
+    4300036: Layer:0
+    4300038: Layer:0
+    4300040: Layer:0
+    4300042: Layer:0
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00100000005
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
